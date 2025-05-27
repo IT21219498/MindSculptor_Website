@@ -32,8 +32,7 @@ const AboutUs: React.FC = () => {
       role: 'Associate Software Engineer',
       company: 'Sampath IT Solutions',
       bio: 'Specializing in machine learning and natural language processing, Pasindu leads the development of the voice analysis algorithms and AI components of the MindSculptor platform.',
-      photo:
-        'https://media.licdn.com/dms/image/v2/D5603AQFeZGbSC96spg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1708585968052?e=2147483647&v=beta&t=1ct-6PIFH5FlWC1eCsQN-ZjRI2rdF6_AMs-Xoz9eLJ0',
+      photo: 'assets/images/pasindu.jpeg',
       email: 'pasindujayasinghe@gmail.com',
       linkedin: '#',
       github: '#',
@@ -64,8 +63,7 @@ const AboutUs: React.FC = () => {
       role: 'Software Engineer',
       company: 'Adveccio',
       bio: "With a background in clinical psychology, Hasaranga ensures that MindSculptor's features align with evidence-based practices for OCD treatment and assessment.",
-      photo:
-        'https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/488046051_2833863883460853_5831324483929417967_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=i07YQNPlJqsQ7kNvwFcOSnb&_nc_oc=AdnmfsWUo9OImN82wi_IjqNCC8_y8O3vzx99rA3Scnp2pWXmTLW0gVVI8RQiUJiKr-Y&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=wVbjUgyBvqW69xnUirGcUA&oh=00_AfLlB9xjHbkMrmVQUiHC6ccboQzQ-92AzKf_PL24pHhOtQ&oe=68392077',
+      photo: 'assets/images/hasa.jpeg',
       email: 'dh.mallawaarachchi@gmail.com',
       linkedin: '#',
       github: '#',
@@ -80,8 +78,7 @@ const AboutUs: React.FC = () => {
       role: 'Software Engineer',
       company: 'Adveccio',
       bio: 'Chamikara specializes in data engineering and backend architecture, ensuring that MindSculptor can efficiently process and analyze large amounts of user data securely.',
-      photo:
-        'https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/296846816_3313519858966298_2957682396124164736_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=sYe9f_Sj-EwQ7kNvwFhUAPu&_nc_oc=AdmqvMxnEqKb02UFFZ9pN6bvb5hWm1aPmvaNdVCupE_4hpiPQO-M5VF8-lui11gMgHI&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=BH0cbzOnsBDifyJ16xYRUQ&oh=00_AfK0pCPSoCjPR2CMG3wGziVEPnDZxSZiwayRe9_Hz4hyrw&oe=6839163D',
+      photo: 'assets/images/chami.jpeg',
       email: 'csvithanage14@gmail.com',
       linkedin: '#',
       github: '#',
