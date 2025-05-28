@@ -19,9 +19,9 @@ const Milestones: React.FC = () => {
     {
       id: 'proposal',
       title: 'Project Proposal',
-      date: '2024-09-15',
+      date: '2024-08-15',
       description: 'Initial project proposal presentation and documentation.',
-      marks: '10/10',
+      marks: '12',
       status: 'completed',
       details: [
         'Presentation of initial research concept',
@@ -29,15 +29,15 @@ const Milestones: React.FC = () => {
         'Identification of research gap and problem statement',
         'Proposal of methodology and technical approach',
         'Timeline and milestone planning',
-        'Resource allocation and budget planning'
-      ]
+        'Resource allocation and budget planning',
+      ],
     },
     {
       id: 'progress-1',
       title: 'Progress Presentation 1',
-      date: '2024-11-20',
+      date: '2024-12-03',
       description: 'First progress review of project implementation.',
-      marks: '18/20',
+      marks: '15',
       status: 'completed',
       details: [
         'Demonstration of system architecture',
@@ -45,31 +45,80 @@ const Milestones: React.FC = () => {
         'Overview of implemented assessment modules',
         'Preliminary results from voice analysis algorithms',
         'Discussion of challenges and proposed solutions',
-        'Updated timeline and next steps'
-      ]
+        'Updated timeline and next steps',
+      ],
     },
     {
       id: 'progress-2',
       title: 'Progress Presentation 2',
-      date: '2025-02-15',
-      description: 'Second progress review focusing on system integration and testing.',
-      marks: 'Pending',
-      status: 'in-progress',
+      date: '2025-03-20',
+      description:
+        'Second progress review focusing on system integration and testing.',
+      marks: '18',
+      status: 'completed',
       details: [
         'Integration of all system components',
         'Demonstration of the VERP therapy module',
         'Presentation of the AI voice assistant functionality',
         'Initial user testing results',
         'Discussion of refinements based on feedback',
-        'Plan for final evaluation phase'
-      ]
+        'Plan for final evaluation phase',
+      ],
+    },
+    {
+      id: 'Research-Paper',
+      title: 'Research Paper',
+      date: '2024-06-02',
+      description:
+        'Submission of the research paper summarizing the project findings.',
+      marks: '10',
+      status: 'completed',
+      details: [
+        'Comprehensive documentation of research methodology',
+        'Analysis of results and findings',
+        'Discussion of contributions to the field',
+        'Review of related work and literature',
+        'Future work and potential applications',
+        'Publication in a peer-reviewed journal or conference proceedings',
+      ],
+    },
+    {
+      id: 'final-report',
+      title: 'Final Report',
+      date: '2024-04-11',
+      description: 'Final report submission summarizing the entire project.',
+      marks: '19',
+      status: 'completed',
+      details: [
+        'Comprehensive summary of project objectives and outcomes',
+        'Detailed documentation of system architecture and design',
+        'Analysis of user feedback and testing results',
+        'Discussion of limitations and challenges faced',
+        'Future work recommendations and potential improvements',
+        'Final project documentation and code repository links',
+      ],
+    },
+    {
+      id: 'Website-assessment',
+      title: 'Website Assessment',
+      date: '2024-05-28',
+      description:
+        'Evaluation of the MindSculptor project website and its features.',
+      marks: '2',
+      status: 'upcoming',
+      details: [
+        'Review of website design and user experience',
+        'Assessment of content quality and relevance',
+        'Evaluation of technical performance and accessibility',
+        'Feedback on navigation and usability',
+      ],
     },
     {
       id: 'final-assessment',
       title: 'Final Assessment',
-      date: '2025-04-20',
+      date: '2025-05-28',
       description: 'Comprehensive assessment of the complete project.',
-      marks: 'Pending',
+      marks: '20',
       status: 'upcoming',
       details: [
         'Final demonstration of the complete MindSculptor platform',
@@ -77,28 +126,30 @@ const Milestones: React.FC = () => {
         'Discussion of research contributions and innovations',
         'Analysis of limitations and future work',
         'Comprehensive project documentation',
-        'Publication plans and commercialization potential'
-      ]
+        'Publication plans and commercialization potential',
+      ],
     },
     {
-      id: 'viva',
-      title: 'Viva',
-      date: '2025-05-10',
-      description: 'Oral defense of the research project.',
-      marks: 'Pending',
+      id: 'Logbook',
+      title: 'Logbook',
+      date: '2024-06-12',
+      description: 'Ongoing logbook entries documenting project progress.',
+      marks: '4',
       status: 'upcoming',
       details: [
-        'In-depth questioning on research methodology',
-        'Demonstration of technical knowledge',
-        'Defense of design and implementation choices',
-        'Discussion of ethical considerations',
-        'Reflection on learning outcomes',
-        'Exploration of project impact and potential applications'
-      ]
+        'Weekly entries documenting research activities',
+        'Reflections on challenges and solutions',
+        'Updates on project milestones and timelines',
+        'Documentation of meetings and discussions',
+        'Record of resources used and references',
+        'Final compilation of logbook entries for submission',
+      ],
     },
   ];
 
-  const [selectedMilestone, setSelectedMilestone] = useState<Milestone | null>(milestones[0]);
+  const [selectedMilestone, setSelectedMilestone] = useState<Milestone | null>(
+    milestones[0]
+  );
 
   return (
     <>
@@ -106,9 +157,12 @@ const Milestones: React.FC = () => {
       <div className="bg-gradient-to-r from-primary-900 to-primary-800 text-white py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">Project Milestones</h1>
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+              Project Milestones
+            </h1>
             <p className="text-lg md:text-xl text-primary-100 leading-relaxed">
-              Tracking our research progress through key project assessments and deliverables.
+              Tracking our research progress through key project assessments and
+              deliverables.
             </p>
           </div>
         </div>
@@ -119,8 +173,10 @@ const Milestones: React.FC = () => {
           {/* Milestone Selection */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-md p-6 sticky top-24">
-              <h2 className="text-2xl font-heading font-medium mb-6 text-neutral-900">Assessments</h2>
-              
+              <h2 className="text-2xl font-heading font-medium mb-6 text-neutral-900">
+                Assessments
+              </h2>
+
               <div className="space-y-3">
                 {milestones.map((milestone) => (
                   <motion.div
@@ -137,18 +193,29 @@ const Milestones: React.FC = () => {
                           : 'hover:bg-neutral-100 text-neutral-700'
                       }`}
                     >
-                      {milestone.status === 'completed' && <CheckCircle className="h-5 w-5 text-success-600 flex-shrink-0 mt-0.5" />}
-                      {milestone.status === 'in-progress' && <Clock className="h-5 w-5 text-warning-500 flex-shrink-0 mt-0.5" />}
-                      {milestone.status === 'upcoming' && <Calendar className="h-5 w-5 text-neutral-400 flex-shrink-0 mt-0.5" />}
-                      
+                      {milestone.status === 'completed' && (
+                        <CheckCircle className="h-5 w-5 text-success-600 flex-shrink-0 mt-0.5" />
+                      )}
+                      {milestone.status === 'in-progress' && (
+                        <Clock className="h-5 w-5 text-warning-500 flex-shrink-0 mt-0.5" />
+                      )}
+                      {milestone.status === 'upcoming' && (
+                        <Calendar className="h-5 w-5 text-neutral-400 flex-shrink-0 mt-0.5" />
+                      )}
+
                       <div>
-                        <h3 className="font-medium text-inherit">{milestone.title}</h3>
+                        <h3 className="font-medium text-inherit">
+                          {milestone.title}
+                        </h3>
                         <p className="text-sm text-neutral-500 mt-1">
-                          {new Date(milestone.date).toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric',
-                          })}
+                          {new Date(milestone.date).toLocaleDateString(
+                            'en-US',
+                            {
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                            }
+                          )}
                         </p>
                       </div>
                     </button>
@@ -198,7 +265,9 @@ const Milestones: React.FC = () => {
                         <div>
                           <p className="text-sm text-neutral-500">Date</p>
                           <p className="font-medium">
-                            {new Date(selectedMilestone.date).toLocaleDateString('en-US', {
+                            {new Date(
+                              selectedMilestone.date
+                            ).toLocaleDateString('en-US', {
                               weekday: 'long',
                               year: 'numeric',
                               month: 'long',
@@ -210,22 +279,32 @@ const Milestones: React.FC = () => {
                       <div className="flex items-center gap-3">
                         <FileCheck className="h-5 w-5 text-primary-600" />
                         <div>
-                          <p className="text-sm text-neutral-500">Marks Allocated</p>
-                          <p className="font-medium">{selectedMilestone.marks}</p>
+                          <p className="text-sm text-neutral-500">
+                            Marks Allocated
+                          </p>
+                          <p className="font-medium">
+                            {selectedMilestone.marks}
+                          </p>
                         </div>
                       </div>
                     </div>
 
                     <div className="mb-8">
-                      <h3 className="text-xl font-heading font-medium mb-4 text-neutral-900">Overview</h3>
-                      <p className="text-neutral-600 leading-relaxed">{selectedMilestone.description}</p>
+                      <h3 className="text-xl font-heading font-medium mb-4 text-neutral-900">
+                        Overview
+                      </h3>
+                      <p className="text-neutral-600 leading-relaxed">
+                        {selectedMilestone.description}
+                      </p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-heading font-medium mb-4 text-neutral-900">Key Components</h3>
+                      <h3 className="text-xl font-heading font-medium mb-4 text-neutral-900">
+                        Key Components
+                      </h3>
                       <ul className="space-y-3">
                         {selectedMilestone.details.map((detail, index) => (
-                          <motion.li 
+                          <motion.li
                             key={index}
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -233,7 +312,9 @@ const Milestones: React.FC = () => {
                             className="flex items-start gap-3"
                           >
                             <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-700 flex items-center justify-center flex-shrink-0 mt-0.5">
-                              <span className="text-sm font-medium">{index + 1}</span>
+                              <span className="text-sm font-medium">
+                                {index + 1}
+                              </span>
                             </div>
                             <p className="text-neutral-600">{detail}</p>
                           </motion.li>
@@ -243,13 +324,19 @@ const Milestones: React.FC = () => {
 
                     {selectedMilestone.status === 'completed' && (
                       <div className="mt-8 p-6 bg-neutral-50 rounded-lg border border-neutral-200">
-                        <h3 className="text-xl font-heading font-medium mb-4 text-neutral-900">Assessment Outcome</h3>
+                        <h3 className="text-xl font-heading font-medium mb-4 text-neutral-900">
+                          Assessment Outcome
+                        </h3>
                         <div className="flex items-center gap-3">
                           <div className="h-12 w-12 rounded-full bg-success-100 text-success-700 flex items-center justify-center flex-shrink-0">
                             <CheckCircle className="h-6 w-6" />
                           </div>
                           <div>
-                            <p className="text-neutral-600">This milestone has been successfully completed with a mark of <strong>{selectedMilestone.marks}</strong>.</p>
+                            <p className="text-neutral-600">
+                              This milestone has been successfully completed
+                              with a mark of{' '}
+                              <strong>{selectedMilestone.marks}</strong>.
+                            </p>
                           </div>
                         </div>
                       </div>
